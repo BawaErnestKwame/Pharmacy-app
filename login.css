@@ -53,6 +53,21 @@ li a {
   font-weight: 600;
 }
 
+.logins{
+  background-color: #f04604;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: white;
+  transition: .5s;
+}
+
+.logins:hover{
+  background-color: #014701;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: white;
+}
+
 li a:hover {
   color: #f04604;
 }
@@ -68,7 +83,7 @@ li a:hover {
 .img__container {
   width: 100%;
   position: absolute;
-  top: 25%;
+  top: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,25 +117,37 @@ li a:hover {
 .signUp__container h1 {
   font-size: 45px;
   font-weight: 500;
-  padding-bottom: 2rem;
+  padding: 1rem 1rem;
 }
 .login__container input {
   width: 80%;
   padding: 2px;
   font-size: 20px;
   margin-bottom: 3rem;
+  cursor: pointer;
   border: none;
   outline: none;
   /* border: 1px solid #f04604; */
   border-bottom: 2px solid #f04604;
   padding: 10px;
+  position: relative;
 
 }
+
+
 .signUp__container input {
   width: 80%;
   padding: 2px;
   font-size: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /* border: 1px solid #f04604; */
+  border-bottom: 2px solid #f04604;
+  padding: 10px;
+  position: relative;
+  border-radius: 2px;
 }
 .login__container button {
   width: 50%;
@@ -131,6 +158,8 @@ li a:hover {
   border-radius: 10px;
   margin-bottom: 3rem;
   padding: 10px;
+  transition: .5s;
+  cursor: pointer;
 }
 
 .login__container button a{
@@ -143,24 +172,54 @@ li a:hover {
   width: 50%;
   padding: 5px;
   font-size: 20px;
-  background-color: #2de62d;
+  background-color: #f04604;
   border: none;
   border-radius: 10px;
   margin-bottom: 3rem;
+  padding: 10px;
+  transition: .5s;
+  cursor: pointer;
+  color:white ;
+  font-weight: bold;
 }
 .login__container button:hover {
-  background-color: #fff;
-  border: #2de62d 3px solid;
+  background-color: rgb(3, 83, 3);
+  
 }
 .signUp__container button:hover {
-  background-color: #fff;
-  border: #2de62d 3px solid;
+  background-color: #014701;
+  color: wheat;
+
+  
 }
 .login__container p {
   position: relative;
   bottom: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.login__container p a{
+  text-decoration: none;
+  color: red;
+}
+
+.login__container p a:hover{
+  border-bottom: 2px solid;
+  
 }
 .signUp__container p {
   position: relative;
   bottom: 20px;
+  font-size: 1rem;
+}
+
+.signUp__container p a{
+  text-decoration: none;
+  color: red;
+
+}
+.signUp__container p a:hover{
+  border-bottom: 2px solid;
+ 
+
 }
