@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Add this to ensure padding and border are included in element's total width and height */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: aliceblue;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 10px 6rem;
+  background-color: #e5e4e4;
+  z-index: 1000; /* Ensure nav is on top of other content */
+  box-shadow: 0px 5px 10px rgba(0, 0,0 , 0.3);
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Adjusted transition duration */
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: #f04604;
+}
+
+.Logo {
+  font-size: 30px;
+}
+
+.Logo span {
+  color: #f34f03;
+}
+
+.img__container {
+  width: 100%;
+  height: 90vh;
+  /* background-image: url("./images/Medication.jpg"); */
+  background: linear-gradient(to left, rgba(2, 65, 35, 0.7), #ffffffa1), url(./images/Medication.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img__container h1{
+  font-size: 60px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+}
+
+.img__container h1::after{
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-color: #f07604;
+  border-radius: 45px;
+  position: absolute;
+  right: 210px;
+  z-index: -1;
+}
+
+.img__container h1 span {
+  color: #03631b;
+  text-shadow: rgba(0, 0, 0, 0.8);
+}
+
+.img__container button {
+  background-color: #f07604;
+  padding: 15px 30px;
+  border-radius: 10px;
+  
+  box-shadow: 0px 5px 10px rgba(0, 0,0 , 0.3);
+  border: none;
+  font-weight: 600;
+  transition: .5s;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 20px; /* Adjusted margin to better align button */
+  transition: background-color 0.3s ease-in-out; /* Adjusted transition duration */
+}
+
+.img__container button a {
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+
+.img__container button:hover {
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.doctor_text{
+  display: flex;
+  width: 90%;
+  gap: 80px;
+  padding: 30px 6rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.doctor_text::after{
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-color: #f07604;
+  border-radius: 45px;
+  position: absolute;
+  right: -50px;
+  opacity: 0.4;
+}
+
+
+.doctor_text h2{
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color:  #f07604;
+
+}
+
+
+.doctor_text h1{
+  margin-bottom: 20px;
+}
+
+.doctor_text img{
+  height: 350px;
+  width: 400px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0,0 , 0.2);
+  border: 4px solid dotted;
+}
+
+.tittle{
+  width: 60%;
+  line-height: 1.4;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tittle h3{
+  color: #f07604;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.tittle h2{
+ 
+  font-weight: bold;
+  font-size: 2rem;
+  
+}
+
+.doctor_text p{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.image{
+  border: 4px solid;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+
+}
+
+.number-onepharmacy{
+  padding: 30px 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.cards{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cards .card1{
+  background-color: white;
+  width: 300px;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.411);
+  box-shadow: 0px 5px 10px rgba(0, 0,0 , 0.2);
+  margin-top: 40px;
+  transition: .5s;
+
+}
+
+.cards .card1:hover{
+  transform: translateY(-5px);
+  border: 1px solid #f04604;
+}
+
+.cards .card1:hover .fa-solid{
+  transform: translateY(-5px);
+  color: #f07604;
+}
+
+.cards .card1 .fa-solid{
+  margin-bottom: 20px;
+  font-size: 4rem;
+  color: #03631b;
+
+}
+
+.cards .card1 h2{
+  margin-bottom: 10px;
+}
+  
+
+.cards .card1 p{
+  letter-spacing: .5px;
+  font-size: 16px;
+  line-height: 1.3;
+
+}
+
+.popular-product-cont{
+  margin-top: 40px;
+
+
+}
+
